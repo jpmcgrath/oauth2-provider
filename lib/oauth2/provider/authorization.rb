@@ -6,6 +6,11 @@ module OAuth2
                   :code, :access_token,
                   :expires_in, :refresh_token,
                   :error, :error_description
+                  
+      attr_accessible :owner, :client,
+                  :code, :access_token,
+                  :expires_in, :refresh_token,
+                  :error, :error_description
       
       REQUIRED_PARAMS = [RESPONSE_TYPE, CLIENT_ID, REDIRECT_URI]
       VALID_PARAMS    = REQUIRED_PARAMS + [SCOPE, STATE]
